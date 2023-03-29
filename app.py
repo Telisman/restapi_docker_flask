@@ -26,10 +26,6 @@ json_movies = json.dumps(movies)
 cur.close()
 conn.close()
 
-
-
-
-
 @app.route('/movies/<int:id>', methods=['GET'])
 def get_movie(id):
     cur = conn.cursor()
